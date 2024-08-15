@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --fuente-inter: 'Inter';
+}
+
+* {
+    padding: 0;
+    margin:0;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    background-color: #f3f5fc;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 115px;
+    width: 7%;
+}
+
+.contenedor{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    gap: 5px;
+}
+
+#textoencriptar {
+    border: none;
+    /*margin-bottom: 40px;*/
+    margin-left: 80px;
+    text-transform: lowercase;
+}
+
+#textoencriptar::placeholder {
+    color: #0a3871;
+}
+
+#textoencriptar:focus {
+    outline: none;
+}
+
+.indicaciones {
+    font-size: 14px;
+    color: #495057;
+}
+
+.contenedor__mensaje__encriptado {
+    background: white;
+    background-image: url("/img/buscando.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    /*position: fixed;*/
+}
+
+.contenedor__mensaje__encriptado:focus {
+    outline: none;
+}
+
+.contenedor__botones{
+    display: flex;
+    margin-top: 18px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.contenedor__botones__accion__encriptar {
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.contenedor__botones__accion__desencriptar {
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 126px;
+    margin-top: 0px;
+    /*position: absolute;*/
+    width: 336px;
+}
+
+.contenedor__texto__indicaciones{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-top: 5px;
+    padding: 5px 30px;
+}
+
+#textoEncritado{
+    /*font-size: 20px;*/
+    text-align: left;
+    color: #495057;
+}
+
+.footer{
+    background-color: #0a3871;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
